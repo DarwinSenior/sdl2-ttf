@@ -1,4 +1,4 @@
-#include "SDL2/SDL_ttf.h"
+#include "SDL_ttf.h"
 {-# LANGUAGE EmptyDataDecls #-}
 module SDL.TTF.Types where
 
@@ -43,7 +43,7 @@ instance Enum TTFStyle where
     toEnum #{const TTF_STYLE_UNDERLINE} = TTFUnderline
     toEnum #{const TTF_STYLE_STRIKETHROUGH} = TTFStrikethrough
     toEnum _ = error "TTFStyle.toEnum: Invalid argument."
-    
+
 -- | Hinting
 --
 -- Font hinting is the use of mathematical instructions to adjust

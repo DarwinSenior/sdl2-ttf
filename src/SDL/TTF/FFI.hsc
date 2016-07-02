@@ -1,4 +1,4 @@
-#include "SDL2/SDL_ttf.h"
+#include "SDL_ttf.h"
 module SDL.TTF.FFI where
 
 import Foreign.C
@@ -23,7 +23,7 @@ foreign import ccall unsafe "TTF_OpenFont"
 
 foreign import ccall unsafe "TTF_CloseFont"
   closeFont :: TTFFont -> IO ()
- 
+
 foreign import ccall unsafe "TTF_OpenFontIndex"
   openFontIndex :: CString -> CInt -> CInt -> IO TTFFont
 
